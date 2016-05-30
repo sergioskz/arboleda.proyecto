@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="JS/index.js"></script>
+    <script type="text/javascript" src="Recursos/jquery-2.2.1.js"></script>
+    <title></title>
+</head>
+
+<body>
+    <form id="preferencias" method="POST">
+    Sobre cine:<br/>
+    <textarea name="Pcine"></textarea><br/>
+    Sobre musica:<br/>
+    <textarea name="Pmusica"></textarea><br/>
+    Sobre literatura:<br/>
+    <textarea name="Plectura"></textarea><br/>
+    Fumas:<br/>
+    Si <input type="radio" name="fumar" value='sf'>
+    No <input type="radio" name="fumar" value='nf'><br/>
+    Sobre tu trabajo:<br/>
+    <textarea name="Ptrabajo"></textarea><br/>
+    Tus lugares favoritos:<br/>
+    <textarea name="Pfavoritos"></textarea><br/>
+    Hobbies:<br/>
+    <textarea name="Phobbies"></textarea><br/>
+    ¿Que buscas?
+        <br/>
+        <input type="checkbox" name="Kbuscas[]" value="Amistad">Amistad
+        <input type="checkbox" name="Kbuscas[]" value="Relacion Seria">Relacion Seria
+        <input type="checkbox" name="Kbuscas[]" value="Relacion sporadica">Relacion Exporadica<br/>
+        <input type="checkbox" name="Kbuscas[]" value="Consorte de Aventuras">Consorte de aventuras
+        <input type="checkbox" name="Kbuscas[]" value="Buen Conversador">Buen conversador
+        <input type="checkbox" name="Kbuscas[]" value="Salidas de Fiesta">Salidas de fiesta<br/>
+        <input type="checkbox" name="Kbuscas[]" value="Gustos extraños">Gustos extraños
+        <input type="checkbox" name="Kbuscas[]" value="Parejas">Parejas
+        <input type="checkbox" name="Kbuscas[]" value="Grupos">Grupos
+        <br/>
+        <input type="button" onclick="FPenviar()" name="enviar" value="enviar">
+    </form>
+    <div id="FPrespuesta"></div>
+</body>
+</html>
