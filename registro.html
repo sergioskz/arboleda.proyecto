@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <script type="text/javascript" src="JS/index.js"></script>
+    <script type="text/javascript" src="Recursos/jquery-2.2.1.js"></script>
+</head>
+
+<body>
+    FORM REGISTRO
+    <form id="Registro" method="post">
+        Nick:
+        <input type="text" name="Nick" required="">
+        <br/> Contraseña:
+        <input type="password" name="Password" required="">
+        <br/> Repita contraseña:
+        <input type="password" name="Password2" required="">
+        <br/> Nombre:
+        <input type="text" name="Nombre" required="">
+        <br/> Apellidos:
+        <input type="text" name="Apellidos" required="">
+        <br/> Email:
+        <input type="email" name="Mail" required="">
+        <br/> Sexo
+        <br/> 
+        <input type="radio" name="Keres" checked="" value="Hombre">Hombre
+        <input type="radio" name="Keres" value="Mujer">Mujer 
+        <input type="radio" name="Keres" value="Otros">Otros
+        <input type="radio" name="Keres" value="Pareja">Pareja
+        <br/> Localidad:
+        <input type="text" name="Localidad" required="">
+        <br/> Municipio:
+        <input type="text" name="Municipio" required="">
+        <br/> Foto:
+        <input type="file" name="Foto" />
+        <br/> Descripcion:
+        <textarea name="Descripcion"></textarea>
+        <input type="button" onclick="FRenviar()" name="enviar" value="enviar">
+    </form>
+<div id="FRrespuesta"></div>
+</body>
+
+</html>
