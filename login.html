@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,4 +59,66 @@
 <!-- ++++++++++++++++++++++++++++++++++++++++++ RESPUESTA +++++++++++++++++++++++++++++++++++++++++ -->     
 <div id="FRrespuesta"></div>
 </body>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Finding</title>
+	<meta charset="utf-8">
+    <script type="text/javascript" src="JS/index.js"></script>
+    <script type="text/javascript" src="Recursos/jquery-2.2.1.js"></script>
+</head>
+<body>
+		<div class="contenido">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++ LOGIN ++++++++++++++++++++++++++++++++++++ -->
+            Login
+    <form id="login">
+    <input type="text" name="fuser"><br/>
+    <input type="password" name="fpass"><br/>
+    <input type="button" name="enviar" value="enviar" onclick="FLenviar()">
+    </form>
+  <!-- +++++++++++++++++++++++++++++++++++++++++++++++++ RESPUESTA +++++++++++++++++++++++++++++++++++++++++ -->
+    <div id="FLrespuesta"></div>
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ REGISTRO ++++++++++++++++++++++++++++++++++++ -->
+    Click en registro si no tienes una cuenta.
+    <div id="ver_on1"><input type="button" onclick="mostrar1('bloque1')" title="Expandir info" value="REGISTRO">
+</div>
+<div id="bloque1" style="display: none">
+<p id="txt">
+    FORM REGISTRO
+    <form id="Registro" method="post">
+        Nick:
+        <input type="text" name="Nick" required="">
+        <br/> Contraseña:
+        <input type="password" name="Password" required="">
+        <br/> Repita contraseña:
+        <input type="password" name="Password2" required="">
+        <br/> Nombre:
+        <input type="text" name="Nombre" required="">
+        <br/> Apellidos:
+        <input type="text" name="Apellidos" required="">
+        <br/> Email:
+        <input type="email" name="Mail" required="">
+        <br/> Sexo
+        <br/> 
+        <input type="radio" name="Keres" checked="" value="Hombre">Hombre
+        <input type="radio" name="Keres" value="Mujer">Mujer 
+        <input type="radio" name="Keres" value="Otros">Otros
+        <input type="radio" name="Keres" value="Pareja">Pareja
+        <br/> Localidad:
+        <input type="text" name="Localidad" required="">
+        <br/> Municipio:
+        <input type="text" name="Municipio" required="">
+        <br/> Foto:
+        <input type="file" name="Foto" />
+        <br/> Descripcion:
+        <textarea name="Descripcion"></textarea>
+        <input type="button" onclick="FRenviar()" name="enviar" value="enviar">
+    </form>
+    </div>
+</div> 
+<!-- ++++++++++++++++++++++++++++++++++++++++++ RESPUESTA +++++++++++++++++++++++++++++++++++++++++ -->     
+<div id="FRrespuesta"></div>
+</body>
+>>>>>>> origin/master
 </html>
