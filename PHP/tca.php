@@ -1,7 +1,7 @@
 <?php
 session_start();
 $id = $_SESSION['ID'];
-$id2 = $_REQUEST['ID2'];
+$id2 = $_REQUEST['id2'];
 // Pregunta 1
 $tabla[A1][A1]=3;
 $tabla[A1][A2]=5;
@@ -247,6 +247,6 @@ if($resultado2->num_rows === 1){
 
 $total = $tabla[$R1][$R21] + $tabla[$R2][$R22] + $tabla[$R3][$R23] + $tabla[$R4][$R24] + $tabla[$R5][$R25] + $tabla[$R6][$R26] + $tabla[$R7][$R27] + $tabla[$R8][$R28] + $tabla[$R9][$R29] + $tabla[$R10][$R210];
 
-echo "Tu puntuacion con ".$id2." es de ".$total;
+echo $total."%";
 
 ?>

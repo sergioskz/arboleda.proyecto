@@ -12,7 +12,23 @@ function FRenviar(){
             error: function(){alert('Se produjo un error inesperado');}                      
         });
         }
-        
+// Formulario de envio para hacer test de compatibilidad con otros usuarios
+        function htc(){
+        var data1 = $("#id2").val();
+        var data2 = "#";
+        var total = data2+data1;
+		var dataString = $('#Fhtc').serialize();
+        var peticion = $.ajax({
+        url: 'PHP/registro.php?nocache='+Math.random(),
+        type: 'POST',
+        async: true,
+        data: dataString,
+            success: function(){
+                $(total).html(peticion.responseText);
+           },
+            error: function(){alert('Se produjo un error inesperado');}                      
+        });
+        }
 // Envio de formulario de compatibilidad
 function FCenviar(){
 		var dataString = $('#compatibilidad').serialize();
