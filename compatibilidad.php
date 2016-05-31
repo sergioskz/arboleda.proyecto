@@ -86,7 +86,7 @@
             if($resultado->num_rows === 1){
             $final = $resultado->fetch_assoc();
             $municipio = $final['Municipio'];
-            $consulta = "select * from datos_personales where Municipio = '$municipio' LIMIT 15";
+            $consulta = "select * from datos_personales where Municipio = '$municipio' ID != '$id' LIMIT 15";
             $resultado = $conexion->query($consulta);
             if($resultado->num_rows > 0){
                 echo "<table>
